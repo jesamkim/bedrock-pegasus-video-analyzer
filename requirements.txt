@@ -1,0 +1,8 @@
+# Amazon Bedrock TwelveLabs Pegasus Video Analysis Requirements
+
+# AWS SDK
+boto3>=1.34.0
+botocore>=1.34.0
+
+# Additional utilities (if needed)
+# ffmpeg-python>=0.2.0  # Alternative to subprocess ffmpeg calls

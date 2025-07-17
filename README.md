@@ -1,4 +1,4 @@
-# Amazon Bedrock TwelveLabs Pegasus 1.2 비디오 분석 프로젝트
+# Amazon Bedrock TwelveLabs Pegasus 1.2 비디오 분석
 
 Amazon Bedrock의 TwelveLabs Pegasus 1.2 모델을 사용하여 S3에 저장된 MP4 비디오를 분석하는 프로젝트입니다.
 
@@ -106,6 +106,7 @@ bedrock-pegasus-video-analyzer/
 ├── config.py                       # 설정 파일 (사용자 수정 가능)
 ├── bedrock_pegasus_test.py         # 기본 테스트 (3개 시나리오)
 ├── bedrock_pegasus.py              # 전문 분석 (Pegasus + Claude)
+├── requirements.txt                # Python 의존성 패키지
 └── README.md                       # 이 파일
 ```
 
@@ -114,8 +115,8 @@ bedrock-pegasus-video-analyzer/
 ### 사전 요구사항
 1. **AWS 자격 증명**: `aws configure`
 2. **Bedrock 모델 액세스**: TwelveLabs Pegasus 1.2 + Claude 3.7 Sonnet
-3. **Python 의존성**: `pip3 install boto3 botocore`
-4. **ffmpeg**: `brew install ffmpeg` (macOS)
+3. **Python 의존성**: `pip3 install -r requirements.txt`
+4. **ffmpeg**: `brew install ffmpeg` (macOS) 또는 `apt-get install ffmpeg` (Ubuntu)
 
 ### 실행 방법
 
