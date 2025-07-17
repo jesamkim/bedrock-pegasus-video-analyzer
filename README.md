@@ -223,21 +223,15 @@ PROFESSIONAL_ANALYSIS_PROMPT = """Your custom analysis prompt"""
 ### 전문 분석 추가 옵션
 - `--custom-prompt`: 사용자 정의 분석 프롬프트 사용
 
-## 성능 지표
 
-### 처리 성능
-- **earthwork.mp4**: 271MB → 2.28MB (99.2% 압축) → 23초 처리
-- **Bridge.mp4**: 8.56MB (압축 불필요) → 24초 처리
-- **분석 정확도**: 비디오 유형 분류 100%, 작업 유형 식별 100%
-
-### 기술 스택
+## 기술 스택
 - **1단계**: TwelveLabs Pegasus 1.2 (비디오 → 텍스트)
 - **2단계**: Claude 3.7 Sonnet (텍스트 → 구조화된 JSON)
 - **압축**: ffmpeg 자동 압축 (480p, 12fps)
 - **출력**: 타임스탬프 포함 JSON 파일
 
 
-## 사용 사례
+## 사용 가능 사례
 
 ### 건설 현장 관리
 - 현장 작업 진행 상황 자동 모니터링
@@ -251,7 +245,6 @@ PROFESSIONAL_ANALYSIS_PROMPT = """Your custom analysis prompt"""
 ### 프로젝트 관리
 - 공사 단계별 진행 상황 추적
 - 자원 배치 최적화
-- 품질 관리 및 검증
 
 
 ## 문제 해결
