@@ -43,8 +43,8 @@ PROFESSIONAL_ANALYSIS_PROMPT = """이 비디오의 영상에 대한 정보를 �
 
 # 기본 S3 URI (예시용 - 사용자가 변경 가능)
 DEFAULT_S3_URIS = [
-    "s3://250717-sct-mov/mov2/earthwork.mp4",
-    "s3://250717-sct-mov/mov1/Bridge.mp4"
+    "s3://250717-mov/mov2/123.mp4",
+    "s3://250717-mov/mov1/456.mp4"
 ]
 
 # 출력 파일 설정
