@@ -11,17 +11,17 @@ AWS_REGION = "us-west-2"
 PEGASUS_MODEL_ID = "us.twelvelabs.pegasus-1-2-v1:0"
 CLAUDE_MODEL_ID = "us.anthropic.claude-3-7-sonnet-20250219-v1:0"
 
-# 비디오 처리 설정
+# 비디오 압축 처리 설정
 VIDEO_COMPRESSION_SETTINGS = {
     "max_size_mb": 70,
     "crf": 30,
     "preset": "fast",
     "resolution": "854:480",  # 480p
     "framerate": 12,
-    "duration_seconds": 60    # 전문 분석용 (bedrock_pegasus.py)
+    "duration_seconds": None  # None으로 설정하면 전체 길이 유지
 }
 
-# 기본 테스트용 (bedrock_pegasus_test.py) 비디오 처리 설정
+# 기본 테스트용 (bedrock_pegasus_test.py) 비디오 압축시 처리 설정
 TEST_VIDEO_COMPRESSION_SETTINGS = {
     "max_size_mb": 70,
     "crf": 30,
@@ -41,10 +41,10 @@ DEFAULT_TEST_PROMPTS = [
 # 전문 분석용 (bedrock_pegasus.py) 프롬프트 (사용자 수정 가능)
 PROFESSIONAL_ANALYSIS_PROMPT = """이 비디오의 영상에 대한 정보를 자세히 확인하세요. 공사 현장 영상인 경우, 작업 내용(토공, 교량공, 도배공 등)이 무엇인지, 투입장비(excavator, loader, dump truck 등)의 종류와 댓수, 어떤 기법으로 촬영(Bird View, Oblique View, Tracking View, CCTV, 1인칭, 360도 등)한 것인지를 확인합니다. 교육 동영상 등의 경우 어떤 내용의 영상인지 (영상의 자막이나 슬라이드 내용도 참고) 확인 합니다."""
 
-# 기본 S3 URI (예시 - 사용자가 변경 가능)
+# 기본 S3 URI (예시용 - 사용자가 변경 가능)
 DEFAULT_S3_URIS = [
-    "s3://250717-mov2/123.mp4",
-    "s3://250717-mov1/456.mp4"
+    "s3://250717-mov2/qwer.mp4",
+    "s3://250717-mov1/asdfg.mp4"
 ]
 
 # 출력 파일 설정
